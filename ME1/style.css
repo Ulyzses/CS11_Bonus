@@ -1,0 +1,152 @@
+:root {
+  --blek: #0a0a0a;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("./fonts/HelveticaNeueBold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/HelveticaNeueBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/HelveticaNeueBold.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/HelveticaNeueBold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/HelveticaNeueBold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/HelveticaNeueBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Helvetica Neue Bold", serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+div {
+  display: flex;
+}
+
+.full {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  height: 80%;
+  width: 70%;
+}
+
+.content {
+  height: 100%;
+  min-width: 400px;
+
+  align-items: center;
+}
+
+.left {
+  border-right: 1px solid black;
+  width: 45%;
+  
+  justify-content: center;
+}
+
+.card-lg {
+  margin: 1rem;
+  padding: 2rem;
+
+  height: 420px;
+  width: 300px;
+
+  background-color: var(--blek);
+  border-radius: 1rem;
+  box-shadow: 0 3px 6px #aaa;
+
+  position: relative;
+}
+
+.card-lg::after {
+  position: absolute;
+  content: "Question 1";
+  bottom: 2rem;
+  color: white;
+  font-size: 1.2em;
+}
+
+.card-lg-title {
+  color: white;
+  font-size: 1.5em;
+  user-select: none;
+}
+
+.right {
+  width: 55%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card-sm {
+  margin: 1rem;
+  padding: 1rem;
+
+  height: 210px;
+  width: 150px;
+
+  border-radius: 0.5rem;
+
+  box-shadow: 0 3px 6px #aaa;
+
+  flex-grow: 0;
+  font-size: 1em;
+
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.card-sm::after {
+  position: absolute;
+  content: "Choice";
+  bottom: 1rem;
+  font-size: 0.8em;
+  color: var(--blek);
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.card-sm:hover {
+  transform: scale(1.1);
+}
+
+label:nth-of-type(even) > .card-sm:active {
+  transition: transform 0.1s;
+  transform: scale(1) rotateZ(-8deg) !important;
+}
+
+label:nth-of-type(odd) > .card-sm:active {
+  transition: transform 0.1s;
+  transform: scale(1) rotateZ(8deg) !important;
+}
+
+input[type=radio]:checked + label:nth-of-type(even) > .card-sm {
+  transform: scale(1.1) rotateZ(-8deg);
+  box-shadow: 0 3px 6px #777;
+}
+
+input[type=radio]:checked + label:nth-of-type(odd) > .card-sm {
+  transform: scale(1.1) rotateZ(8deg);
+  box-shadow: 0 3px 6px #777;
+}
+
+.card-sm-title {
+  color: var(--blek);
+  font-size: 0.75em;
+  user-select: none;
+}
