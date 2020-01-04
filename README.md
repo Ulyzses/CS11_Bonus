@@ -2,7 +2,9 @@
 
 ### Bonus ME 1: Multiple Choice Quiz
 
-This is a multiple choice adaptation of our previously done quiz exercise. Do not judge the content, the activity requires us to adapt our previous exercise, which involved me doing Teemo stuff.
+This is a multiple choice adaptation of our previously done quiz exercise. The theme for this is heavily inspired by Cards Against Humanity.
+
+Do not judge the content, the activity requires us to adapt our previous exercise, which involved me doing Teemo stuff.
 
 #### How to Use
 
@@ -10,7 +12,7 @@ In the site, there are 2 types of cards: black cards which display questions, an
 
 ### Bonus ME 2: Image Slider
 
-This is a simple image slider for a 5 panel story. The story I used was the poem me and  my friend made back in Grade 6, hence the randomness
+This is a simple image slider for a 5 panel story. The story I used was the poem me and  my friend made back in Grade 6, hence the randomness. All art was done by me.
 
 #### How to Use
 
