@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en>
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
@@ -7,43 +7,56 @@
   <title>Bonus ME 1</title>
 </head>
 <body>
-  
   <div class="full">
     <div class="wrapper">
       <div class="left content">
-        <div class="card-lg">
-          <h1 class="card-lg-title" id="q">What is Teemo's alias?</h1>
+        <div class="flip">
+          <div class="flip-inner" id="flippy">
+            <div class="card-lg front" data-value="1">
+              <h1 class="card-lg-title" id="q">What is Teemo's alias?</h1>
+              <button type="button" id="re">Retake the Test</button>
+            </div>
+            <div class="card-lg back">
+              <h1 class="card-lg-title" id="a">The Swift Scout</h1>
+            </div>
+          </div>
         </div>
       </div>
       <div class="content right">
-        <input type="radio" name="choices" id="choice1">
-        <label for="choice1">
-          <div class="card-sm">
-            <h2 class="card-sm-title">The Swift Scout</h2>
-          </div>
-        </label>
+        <form name="foo">
+          <input type="radio" name="choices" id="choice1">
+          <label for="choice1">
+            <div class="card-sm">
+              <h2 class="card-sm-title">The Swift Scout</h2>
+              <button type="submit">Submit</button>
+            </div>
+          </label>
 
-        
-        <input type="radio" name="choices" id="choice2">
-        <label for="choice2">
-          <div class="card-sm">
-            <h2 class="card-sm-title">The Yordle Gunner</h2>
-          </div>
-        </label>
+          
+          <input type="radio" name="choices" id="choice2">
+          <label for="choice2">
+            <div class="card-sm">
+              <h2 class="card-sm-title">The Yordle Gunner</h2>
+              <button type="submit">Submit</button>
+            </div>
+          </label>
 
-        <input type="radio" name="choices" id="choice3">
-        <label for="choice3">
-          <div class="card-sm">
-            <h2 class="card-sm-title">The Little Devil</h2>
-          </div>
-        </label>
+          <input type="radio" name="choices" id="choice3">
+          <label for="choice3">
+            <div class="card-sm">
+              <h2 class="card-sm-title">The Little Devil</h2>
+              <button type="submit">Submit</button>
+            </div>
+          </label>
 
-        <input type="radio" name="choices" id="choice4">
-        <label for="choice4">
-          <div class="card-sm">
-            <h2 class="card-sm-title">The Tiny Master of Evil</h2>
-          </div>
-        </label>
+          <input type="radio" name="choices" id="choice4">
+          <label for="choice4">
+            <div class="card-sm">
+              <h2 class="card-sm-title">The Tiny Master of Evil</h2>
+              <button type="submit">Submit</button>
+            </div>
+          </label>
+        </form>
       </div>
     </div>
   </div>
