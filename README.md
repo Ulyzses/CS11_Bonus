@@ -4,7 +4,7 @@
 
 This is a multiple choice adaptation of our previously done quiz exercise. The theme for this is heavily inspired by Cards Against Humanity.
 
-Do not judge the content, the activity requires us to adapt our previous exercise, which involved me doing Teemo stuff.
+Do not judge the content, the activity requires us to adapt our previous exercise, which involved me doing Teemo stuff. The original version of this can be found [here](https://me7.ulyzses.repl.co)
 
 #### How to Use
 
