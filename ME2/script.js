@@ -2,6 +2,7 @@ const id = a => document.getElementById(a)
 const $ = q => document.querySelector(q);
 
 const images = [
+  "img/Panel 1.png",
   "img/Panel 2.png",
   "img/Panel 3.png",
   "img/Panel 4.png",
@@ -18,5 +19,5 @@ function change(dir) {
 
   id('pic').src = images[index];
 
-  $('.prev').style.display = (index) ? 'block' : 'none';
+  $('.prev').style.visibility = (index) ? 'visible' : 'hidden';
 }
